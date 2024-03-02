@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lester's Webpage</title>
+  <!-- links the font awesome stylesheet to use Font Awesome icons. Will be using the github Font Awesome icon -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+  <!-- Montserrat font -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Montserrat"
+    rel="stylesheet"
+  />
+  <style>
+    /* style the entire body */
+    body {
+      background: url("https://4kwallpapers.com/images/wallpapers/himalayas-mountain-range-sunrise-winter-above-clouds-4480x2520-1165.jpg");
+      background-size: cover;
+      font-family: "Montserrat";
+      text-align: center;
+      color: azure;
+    }
+
+    /* style img */
+    img {
+      border-style: solid;
+      border-radius: 50%;
+      height: 20vw;
+    }
+    /* add container between img and text to pad */
+    div {
+      height: 10vw;
+    }
+
+    /* style p */
+    p {
+      font-size: 15px;
+    }
+
+    /* style inputs */
+    input {
+      font-size: 15px;
+      border-color: indigo;
+      padding: 0.3vw;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- image -->
+  <img src="https://i.kym-cdn.com/photos/images/original/001/742/441/847.jpg" />
+  <div></div>
+  <!-- BIG TEXT -->
+  <h1>LESTER - THE DEVELOPER</h1>
+  <!-- supplementary text with github icon and link -->
+  <p>
+    connect with me - leave your email address or visit my github!
+    <!-- link the icon to my github profile -->
+    <a href="https://github.com/lesterc013" target="_blank">
+      <i class="fa fa-github" style="font-size: 2vw"></i>
+    </a>
+  </p>
+  <!-- email input field -->
+  <input type="email" placeholder="your email here!" required />
+  <input type="submit" />
+  <!-- do you like this website radio buttons -->
+  <!-- The radio group must share the same name (the value of the name attribute) to be treated as a group. Once the radio group is created, selecting any radio button in that group automatically deselects any other selected radio button in the same group -->
+  <!-- value is what is sent to the server upon submit -->
+  <p>do you like this website?</p>
+  <input type="radio" name="like-website" value="yes" id="yes" />
+  <label for="yes">YES</label>
+  <input type="radio" name="like-website" value="yes" id="yes" />
+  <label for="yes">NO</label>
+</body>
